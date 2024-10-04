@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@300;400;600&family=Poppins:wght@300;400;600&family=Baloo+2:wght@400;700&family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Pokémon Gallery</h1>
+    <form id="search-form" action="/" method="GET">
+      <input type="text" name="pokemonName" placeholder="Search for a Pokémon..." required>
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main>
+  
+
+    <section class="pokemon-list">
+      <% pokemons.forEach(pokemon => { %>
+        <div class="pokemon-card">
+          <h2><%= pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1) %></h2>
+          <img src="<%= pokemon.sprites.front_default %>" alt="<%= pokemon.name %>">
+          <p><strong>Height:</strong> <%= (pokemon.height/10).toFixed(1) %>m</p>
+          <p><strong>Weight:</strong> <%= (pokemon.weight/10).toFixed(1) %>kg</p>
+          <p><strong>Type:</strong> 
+            <% pokemon.types.forEach(type => { %>
+              <%= type.type.name %> 
+            <% }) %>
+          </p>
+        </div>
+      <% }) %>
+    </section>
+   
+  </main>
+
+  <footer>
+    <p>Pokémon Data Source ©2024</p>
+  </footer>
+</body>
+</html>

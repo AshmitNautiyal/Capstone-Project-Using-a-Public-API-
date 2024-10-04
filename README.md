@@ -23,19 +23,22 @@ Follow these steps to set up and run the project locally:
    ```bash
    git clone https://github.com/AshmitNautiyal/Capstone-Project-Using-a-Public-API-.git
    
-2 .Navigate to the Project Directory:
+2. **Navigate to the Project Directory**:
+   ```bash
 
    cd Capstone-Project-Using-a-Public-API-
 
-3. Install Dependencies: Install the required npm packages using:
+3. **Install Dependencies: Install the required npm packages using**:
+    ```bash
 
    npm install
 
-4. Start the Server: To start the server, run:
+4. **Start the Server: To start the server, run **:
+   ```bash
 
    nodemon index.js
 
-5. Access the Application: Open your web browser and go to http://localhost:PORT, where PORT is the port number defined in your application (default is usually 3000).
+6. Access the Application: Open your web browser and go to http://localhost:PORT, where PORT is the port number defined in your application (default is usually 3000).
 
 Contributing
 

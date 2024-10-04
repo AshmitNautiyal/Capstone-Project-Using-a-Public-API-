@@ -38,7 +38,7 @@ Follow these steps to set up and run the project locally:
 
    nodemon index.js
 
-6. Access the Application: Open your web browser and go to http://localhost:PORT, where PORT is the port number defined in your application (default is usually 3000).
+6. Access the Application: The application will be available at http://localhost:3000.
 
 Contributing
 
